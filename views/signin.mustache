@@ -46,7 +46,14 @@
 				<a class="abtn"  href="/register">Sign Up</a>
 			<script>
     function popup(){
-      swal("Good", "Login In", "success")
+		if(<input type="email" name="email" placeholder="email" required/> &&
+				<input type="password" name="password" placeholder="password" required/>){
+						swal("Good", "Login In", "success")
+				}
+		else {
+			swal("Enter your details correctly")
+		}
+      
     }
 </script>
 				{{!-- <a href="#" class="fra" >Forgot your password?</a> --}}
